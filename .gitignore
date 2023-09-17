@@ -12,5 +12,5 @@ data.lammps
 *.dat
 
 # luteolin
-!scripts/2023-09-17-luteolin/luteolin.png
-!scripts/2023-09-17-luteolin/luteolin.webp
+!docs/images/2023-09-17-luteolin/luteolin.png
+!docs/images/2023-09-17-luteolin/luteolin.webp
