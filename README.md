@@ -4,7 +4,7 @@ The [gallery of molecules](https://simongravelle.github.io/gallery/) contains sc
 HR images and videos.
 
 <p float="left">
-  <a href="amorphous-carbon/"><img src="docs/images/2023-09-17-luteolin/luteolin.png" width="24.5%" /></a>
+  <a href="amorphous-carbon/"><img src="docs/images/2023-09-17-luteolin/luteolin.png" width="50%" /></a>
 </p>
 
 Some of the videos are also shown on [Youtube](https://www.youtube.com/c/simongravelle).
