@@ -1,0 +1,16 @@
+
+*.ppm
+*.mp4
+*.png
+*.kdenlive
+*.lammpstrj
+*.xyz
+log.lammps
+data.lammps
+*.pdb
+*.tga
+*.dat
+
+# luteolin
+!scripts/2023-09-17-luteolin/luteolin.png
+!scripts/2023-09-17-luteolin/luteolin.webp
