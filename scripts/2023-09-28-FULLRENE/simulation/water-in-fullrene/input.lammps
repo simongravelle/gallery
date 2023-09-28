@@ -1,0 +1,34 @@
+# LAMMPS input file 
+
+boundary p p p
+units real
+atom_style full
+bond_style harmonic
+angle_style harmonic
+dihedral_style harmonic
+improper_style harmonic
+pair_style lj/cut/coul/long 12
+kspace_style pppm 1e-5
+
+special_bonds lj 0.0 0.0 0.5 coul 0.0 0.0 1.0 angle yes dihedral yes
+
+read_data data.lammps
+include parm.lammps
+
+group ful type 1
+group wat type 2 3 
+
+fix mynvt1 wat nvt temp 3000 3000 100
+fix mynvt2 ful nvt temp 3000 3000 100
+fix myrct all recenter INIT INIT INIT
+timestep 0.5
+
+thermo 1000
+
+run 50000
+
+dump mydmp all atom 1 dump.lammpstrj
+
+run 1400
+
+write_data data.equilibrium
