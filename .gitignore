@@ -12,17 +12,6 @@ data.lammps
 *.dat
 
 # luteolin
-!docs/images/2023-09-17-luteolin/luteolin*.png
-!docs/images/2023-09-17-luteolin/luteolin.webp
+!docs/images/*/*.png
+!docs/images/*/*.webp
 
-# PEG
-!docs/images/2023-09-17-PEG/PEG.png
-!docs/images/2023-09-17-PEG/PEG.webp
-
-# fullrene
-!docs/images/2023-09-28-FULLRENE/fullrene.png
-!docs/images/2023-09-28-FULLRENE/fullrene.webp
-
-# C48H24
-!docs/images/2023-09-28-C48H24/C48H24.png
-!docs/images/2023-09-28-C48H24/C48H24.webp
