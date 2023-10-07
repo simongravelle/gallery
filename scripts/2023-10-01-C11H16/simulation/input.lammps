@@ -28,7 +28,7 @@ timestep 1.0
 thermo 1000
 run 5000
 
-dump mydmp all atom 4 dump.lammpstrj
-run 25000
+dump mydmp all atom 10 dump.lammpstrj
+run 5000
 
 write_data data.equilibrium

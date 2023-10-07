@@ -11,11 +11,11 @@ proc vmdrestoremymaterials {} {
       material add $mat
     }
   }
-  material change ambient Opaque 0.440000
-  material change diffuse Opaque 0.220000
-  material change specular Opaque 0.630000
-  material change shininess Opaque 0.240000
-  material change mirror Opaque 0.000000
+  material change ambient Opaque 0.000000
+  material change diffuse Opaque 0.290000
+  material change specular Opaque 0.320000
+  material change shininess Opaque 0.270000
+  material change mirror Opaque 0.270000
   material change opacity Opaque 1.000000
   material change outline Opaque 0.000000
   material change outlinewidth Opaque 0.000000
@@ -245,7 +245,7 @@ proc vmdrestoremymaterials {} {
   material change outline Material25 0.000000
   material change outlinewidth Material25 0.000000
   material change transmode Material25 0.000000
-  material change ambient Material26 0.000000
+  material change ambient Material26 0.190000
   material change diffuse Material26 0.480000
   material change specular Material26 0.500000
   material change shininess Material26 0.270000
@@ -314,7 +314,7 @@ display eyesep       0.065000
 display focallength  2.000000
 display height       7.000000
 display distance     -2.000000
-display projection   Perspective
+display projection   Orthographic
 display nearclip set 0.500000
 display farclip  set 10.000000
 display depthcue   off
@@ -341,7 +341,7 @@ mol addrep top
 mol selupdate 0 top 0
 mol colupdate 0 top 0
 mol scaleminmax top 0 1.000000 1.000000
-mol smoothrep top 0 1
+mol smoothrep top 0 2
 mol drawframes top 0 {now}
 mol clipplane center 0 0 top {0.0 0.0 0.0}
 mol clipplane color  0 0 top {0.5 0.5 0.5 }
@@ -375,7 +375,7 @@ mol addrep top
 mol selupdate 1 top 0
 mol colupdate 1 top 0
 mol scaleminmax top 1 0.000000 0.000000
-mol smoothrep top 1 1
+mol smoothrep top 1 2
 mol drawframes top 1 {now}
 mol clipplane center 0 1 top {0.0 0.0 0.0}
 mol clipplane color  0 1 top {0.5 0.5 0.5 }
@@ -409,7 +409,7 @@ mol addrep top
 mol selupdate 2 top 0
 mol colupdate 2 top 0
 mol scaleminmax top 2 0.000000 0.000000
-mol smoothrep top 2 1
+mol smoothrep top 2 2
 mol drawframes top 2 {now}
 mol clipplane center 0 2 top {0.0 0.0 0.0}
 mol clipplane color  0 2 top {0.5 0.5 0.5 }
@@ -435,7 +435,7 @@ mol clipplane center 5 2 top {0.0 0.0 0.0}
 mol clipplane color  5 2 top {0.5 0.5 0.5 }
 mol clipplane normal 5 2 top {0.0 0.0 1.0}
 mol clipplane status 5 2 top {0}
-mol representation DynamicBonds 1.500000 0.300000 12.000000
+mol representation DynamicBonds 1.400000 0.300000 12.000000
 mol color Name
 mol selection {type 1 2}
 mol material Opaque
@@ -443,7 +443,7 @@ mol addrep top
 mol selupdate 3 top 0
 mol colupdate 3 top 0
 mol scaleminmax top 3 0.000000 0.000000
-mol smoothrep top 3 1
+mol smoothrep top 3 2
 mol drawframes top 3 {now}
 mol clipplane center 0 3 top {0.0 0.0 0.0}
 mol clipplane color  0 3 top {0.5 0.5 0.5 }
@@ -477,7 +477,7 @@ mol addrep top
 mol selupdate 4 top 0
 mol colupdate 4 top 0
 mol scaleminmax top 4 0.000000 0.000000
-mol smoothrep top 4 1
+mol smoothrep top 4 2
 mol drawframes top 4 {now}
 mol clipplane center 0 4 top {0.0 0.0 0.0}
 mol clipplane color  0 4 top {0.5 0.5 0.5 }
@@ -506,12 +506,12 @@ mol clipplane status 5 4 top {0}
 mol representation Surf 1.400000 1.000000
 mol color Name
 mol selection {type 1 2}
-mol material Material25
+mol material Opaque
 mol addrep top
 mol selupdate 5 top 0
 mol colupdate 5 top 0
 mol scaleminmax top 5 0.000000 0.000000
-mol smoothrep top 5 1
+mol smoothrep top 5 2
 mol drawframes top 5 {now}
 mol clipplane center 0 5 top {0.0 0.0 0.0}
 mol clipplane color  0 5 top {0.5 0.5 0.5 }
@@ -537,6 +537,7 @@ mol clipplane center 5 5 top {0.0 0.0 0.0}
 mol clipplane color  5 5 top {0.5 0.5 0.5 }
 mol clipplane normal 5 5 top {0.0 0.0 1.0}
 mol clipplane status 5 5 top {0}
+mol showrep top 5 0
 mol representation Surf 1.400000 0.000000
 mol color Name
 mol selection {type 1 2}
@@ -571,8 +572,9 @@ mol clipplane center 5 6 top {0.0 0.0 0.0}
 mol clipplane color  5 6 top {0.5 0.5 0.5 }
 mol clipplane normal 5 6 top {0.0 0.0 1.0}
 mol clipplane status 5 6 top {0}
+mol showrep top 6 0
 mol rename top dump.lammpstrj
-set viewpoints([molinfo top]) {{{1 0 0 0.0566594} {0 1 0 0.0271555} {0 0 1 0.0953777} {0 0 0 1}} {{-0.989972 0.107637 -0.0911831 0} {0.136365 0.564951 -0.813759 0} {-0.0360755 -0.818046 -0.573979 0} {0 0 0 1}} {{0.332948 0 0 0} {0 0.332948 0 0} {0 0 0.332948 0} {0 0 0 1}} {{1 0 0 0} {0 1 0 0} {0 0 1 0} {0 0 0 1}}}
+set viewpoints([molinfo top]) {{{1 0 0 0.0566594} {0 1 0 0.0271555} {0 0 1 0.0953777} {0 0 0 1}} {{0.796443 -0.290267 -0.530432 0} {0.60328 0.322276 0.729478 0} {-0.0407901 -0.901014 0.431811 0} {0 0 0 1}} {{0.477913 0 0 0} {0 0.477913 0 0} {0 0 0.477913 0} {0 0 0 1}} {{1 0 0 0} {0 1 0 0} {0 0 1 0} {0 0 0 1}}}
 lappend viewplist [molinfo top]
 set topmol [molinfo top]
 # done with molecule 1
@@ -741,7 +743,7 @@ color scale colors WBlk {1.0 1.0 1.0} {0.5 0.5 0.5} {0.0 0.0 0.0}
   color change rgb 6 0.6000000238418579 0.6000000238418579 0.6000000238418579
   color change rgb 7 0.0 1.0 0.0
   color change rgb 9 1.0 0.6000000238418579 0.6000000238418579
-  color change rgb 10 0.05000000074505806 0.0 0.10999999940395355
+  color change rgb 10 0.0 0.0 0.0
   color change rgb 11 0.10999999940395355 0.10999999940395355 0.11999999731779099
   color change rgb 12 0.5 0.8999999761581421 0.4000000059604645
   color change rgb 13 0.8999999761581421 0.4000000059604645 0.699999988079071
