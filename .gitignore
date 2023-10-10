@@ -10,7 +10,7 @@ log.lammps
 *.tga
 *.dat
 
-# luteolin
 !docs/images/*/*.png
 !docs/images/*/*.webp
+
 
