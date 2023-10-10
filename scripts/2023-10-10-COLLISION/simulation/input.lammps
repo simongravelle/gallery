@@ -1,0 +1,62 @@
+# LAMMPS input file 
+
+boundary p p p
+units real
+atom_style full
+bond_style harmonic
+angle_style harmonic
+dihedral_style harmonic
+improper_style harmonic
+pair_style lj/cut/coul/long 12
+kspace_style pppm 1e-5
+
+special_bonds lj 0.0 0.0 0.5 coul 0.0 0.0 1.0 angle yes dihedral yes
+
+read_data data.lammps
+include parm.lammps
+
+group ful type 1
+group wat type 2 3 
+
+replicate 2 1 1
+
+region left block INF 12 INF INF INF INF
+region right block 12 INF INF INF INF INF
+group left region left
+group right region right
+group water_left intersect left wat
+delete_atoms group water_left
+
+fix myrct all recenter INIT INIT INIT
+
+fix mynvt1 wat nvt temp 1 1 1
+fix mynvt2 ful nvt temp 1 1 1
+timestep 0.01
+run 1000
+
+fix mynvt1 wat nvt temp 1 300 1
+fix mynvt2 ful nvt temp 1 300 1
+timestep 0.1
+run 1000
+
+fix mynvt1 wat nvt temp 300 300 1
+fix mynvt2 ful nvt temp 300 300 1
+timestep 0.5
+run 1000
+
+compute twat wat temp/partial 0 1 1
+fix mynvt1 wat nvt temp 300 300 100
+fix_modify mynvt1 temp twat
+compute tful ful temp/partial 0 1 1
+fix mynvt2 ful nvt temp 300 300 100
+fix_modify mynvt2 temp tful
+velocity left set 0.05 NULL NULL
+velocity right set -0.05 NULL NULL
+
+timestep 0.5
+
+thermo 1000
+
+dump mydmp all atom 2 dump.lammpstrj
+
+run 4000

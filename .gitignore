@@ -6,7 +6,6 @@
 *.lammpstrj
 *.xyz
 log.lammps
-data.lammps
 *.pdb
 *.tga
 *.dat
