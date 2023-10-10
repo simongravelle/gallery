@@ -4,7 +4,7 @@ The [gallery of molecules](https://simongravelle.github.io/gallery/) contains sc
 HR images and videos.
 
 <p float="left">
-  <a href="scripts/2023-10-10-COLLISION/"><img src="docs/images/2023-10-10-COLLISION6/fullrene.png" width="100%" /></a>
+  <a href="scripts/2023-10-10-COLLISION/"><img src="docs/images/2023-10-10-COLLISION/fullrene.png" width="100%" /></a>
 </p>
 
 <p float="left">
