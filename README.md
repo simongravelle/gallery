@@ -1,7 +1,7 @@
-# Gallery of molecules
+# Molecular art
 
-The [gallery of molecules](https://simongravelle.github.io/gallery/) contains scripts,
-HR images and videos.
+The [gallery of molecules](https://simongravelle.github.io/gallery/) contains scripts and
+HR images, can be use for wallpaper.
 
 <p float="left">
   <a href="scripts/2023-10-10-COLLISION/"><img src="docs/images/2023-10-10-COLLISION/fullrene.png" width="100%" /></a>
