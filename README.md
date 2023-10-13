@@ -4,7 +4,7 @@ The [gallery of molecules](https://simongravelle.github.io/gallery/) contains sc
 HR images, can be use for wallpaper.
 
 <p float="left">
-  <a href="scripts/2023-10-14-GRAPHENE/"><img src="docs/images/2023-10-14-GRAPHENE/graphene.png" width="100%" /></a>
+  <a href="scripts/2023-10-13-GRAPHENE/"><img src="docs/images/2023-10-13-GRAPHENE/graphene.png" width="100%" /></a>
 </p>
 
 <p float="left">
