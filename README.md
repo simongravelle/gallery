@@ -30,5 +30,4 @@ find more information on my [personal webpage](https://simongravelle.github.io/)
 
 ### License ###
 
-All the inputs and figures are released under the 
-GNU general public license v3.0.
+All the inputs and figures are released under the GNU general public license v3.0.
