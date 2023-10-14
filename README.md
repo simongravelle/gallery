@@ -19,9 +19,9 @@ Some of the scripts are used to make [videos](https://www.youtube.com/c/simongra
 
 ### How it is done ###
 
-Most figure are generated using [VMD](https://www.ks.uiuc.edu/Research/vmd/),
-from molecular dynamics simulations done with [LAMMPS](https://www.lammps.org/#gsc.tab=0) using topology
-from the [atb](https://atb.uq.edu.au/).
+Most pictures are generated using [VMD](https://www.ks.uiuc.edu/Research/vmd/),
+from molecular dynamics simulations done with [LAMMPS](https://www.lammps.org/#gsc.tab=0)
+using topology from the [atb](https://atb.uq.edu.au/).
 
 ### About me ###
 
