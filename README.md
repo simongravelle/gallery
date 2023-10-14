@@ -1,6 +1,6 @@
 # Molecular art
 
-The [gallery of molecules](https://simongravelle.github.io/gallery/) contains scripts and
+This [molecular art gallery](https://simongravelle.github.io/gallery/) contains scripts and
 high resolution pictures. Feel free to re-use these pictures or scripts, everything is 
 under the GNU GENERAL PUBLIC LICENSE.
 
