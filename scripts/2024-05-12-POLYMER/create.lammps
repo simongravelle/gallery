@@ -1,0 +1,53 @@
+# LAMMPS input script by Simon Gravelle
+# This file was released under the GNU general public license v3.0⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠙⠻⠿⣿⣿⣿⣿⡿⠟⠋⠀
+
+units real
+atom_style full
+bond_style harmonic
+angle_style harmonic
+dihedral_style harmonic
+pair_style lj/cut/coul/cut 12
+special_bonds lj 0.0 0.0 0.5 coul 0.0 0.0 1.0 angle yes dihedral yes
+
+region box block -120 120 -120 120 -120 120
+create_box 9 box &
+    bond/types 7 &
+    angle/types 8 &
+    dihedral/types 4 &
+    extra/bond/per/atom 3 &
+    extra/angle/per/atom 6 &
+    extra/dihedral/per/atom 10 &
+    extra/special/per/atom 14
+
+include PARM.lammps
+
+molecule pegmol PEG-GROMOS.mol
+create_atoms 0 random 100 87910 NULL mol pegmol 98987 overlap 1.0 maxtry 50
+
+molecule h2omol H2O-SPCFw.mol
+create_atoms 0 random 150 87910 NULL mol h2omol 454756 overlap 1.0 maxtry 50
+
+group H2O type 8 9
+group PEG type 1 2 3 4 5 6 7
+
+delete_atoms overlap 2.0 H2O PEG mol yes
+
+fix mynpt all npt temp 300 300 100 iso 1000 1000 1000
+timestep 1.0
+
+dump mydmp all atom 100 dump.lammpstrj
+thermo 100
+variable mytemp equal temp
+variable myvol equal vol
+variable myenthalpy equal enthalpy
+fix myat1 all ave/time 10 10 100 v_mytemp file temperature.dat
+fix myat2 all ave/time 10 10 100 v_myvol file volume.dat
+fix myat3 all ave/time 10 10 100 v_myenthalpy file enthalpy.dat
+
+run 30000
+
+fix mynpt all npt temp 300 300 100 iso 1000 1000 1000
+
+run 30000
+
+write_data created.data

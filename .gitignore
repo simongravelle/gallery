@@ -5,6 +5,7 @@
 *.kdenlive
 *.lammpstrj
 *.xyz
+*.xtc
 log.lammps
 *.pdb
 *.tga
