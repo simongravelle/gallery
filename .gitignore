@@ -14,4 +14,6 @@ log.lammps
 !docs/images/*/*.png
 !docs/images/*/*.webp
 
+**/.*.lock
+**/.*.npz
 
