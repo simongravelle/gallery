@@ -21,8 +21,11 @@ include PARM.lammps
 group H2O type 8 9
 group PEG type 1 2 3 4 5 6 7
 
-write_dump all atom dump.lammpstrj
-dump mydmp all xtc 25 dump.xtc
+set group all image 0 0 0 
+
+#write_dump all atom dump.lammpstrj
+#dump mydmp all xtc 25 dump.xtc
+dump mydmp all custom 25 dump.lammpstrj id type xu yu zu
 
 thermo 250
 variable mytemp equal temp
