@@ -298,7 +298,7 @@ display dof_focaldist 0.700000
 mol new dump.lammpstrj type lammpstrj first 0 last -1 step 1 filebonds 1 autobonds 1 waitfor all
 mol addfile /home/simon/Git/Art/gallery/scripts/2024-05-12-POLYMER/nojump.xtc type xtc first 0 last -1 step 1 filebonds 1 autobonds 1 waitfor all
 mol delrep 0 top
-mol representation DynamicBonds 1.900000 0.100000 7.000000
+mol representation DynamicBonds 1.900000 0.100000 32.000000
 mol color ResName
 mol selection {type 1 2 5 6 7}
 mol material Opaque
@@ -306,7 +306,7 @@ mol addrep top
 mol selupdate 0 top 0
 mol colupdate 0 top 0
 mol scaleminmax top 0 0.000000 0.000000
-mol smoothrep top 0 0
+mol smoothrep top 0 1
 mol drawframes top 0 {now}
 mol clipplane center 0 0 top {0.0 0.0 0.0}
 mol clipplane color  0 0 top {0.5 0.5 0.5 }
@@ -332,7 +332,7 @@ mol clipplane center 5 0 top {0.0 0.0 0.0}
 mol clipplane color  5 0 top {0.5 0.5 0.5 }
 mol clipplane normal 5 0 top {0.0 0.0 1.0}
 mol clipplane status 5 0 top {0}
-mol representation VDW 0.800000 7.000000
+mol representation VDW 0.800000 32.000000
 mol color Name
 mol selection {type 8 }
 mol material Opaque
@@ -340,7 +340,7 @@ mol addrep top
 mol selupdate 1 top 0
 mol colupdate 1 top 0
 mol scaleminmax top 1 0.000000 0.000000
-mol smoothrep top 1 0
+mol smoothrep top 1 1
 mol drawframes top 1 {now}
 mol clipplane center 0 1 top {0.0 0.0 0.0}
 mol clipplane color  0 1 top {0.5 0.5 0.5 }
@@ -366,7 +366,7 @@ mol clipplane center 5 1 top {0.0 0.0 0.0}
 mol clipplane color  5 1 top {0.5 0.5 0.5 }
 mol clipplane normal 5 1 top {0.0 0.0 1.0}
 mol clipplane status 5 1 top {0}
-mol representation VDW 0.500000 7.000000
+mol representation VDW 0.500000 32.000000
 mol color Name
 mol selection {type 9}
 mol material Opaque
@@ -374,7 +374,7 @@ mol addrep top
 mol selupdate 2 top 0
 mol colupdate 2 top 0
 mol scaleminmax top 2 0.000000 0.000000
-mol smoothrep top 2 0
+mol smoothrep top 2 1
 mol drawframes top 2 {now}
 mol clipplane center 0 2 top {0.0 0.0 0.0}
 mol clipplane color  0 2 top {0.5 0.5 0.5 }
@@ -408,7 +408,7 @@ mol addrep top
 mol selupdate 3 top 0
 mol colupdate 3 top 0
 mol scaleminmax top 3 0.000000 0.000000
-mol smoothrep top 3 0
+mol smoothrep top 3 1
 mol drawframes top 3 {now}
 mol clipplane center 0 3 top {0.0 0.0 0.0}
 mol clipplane color  0 3 top {0.5 0.5 0.5 }
@@ -442,7 +442,7 @@ mol addrep top
 mol selupdate 4 top 0
 mol colupdate 4 top 0
 mol scaleminmax top 4 0.000000 0.000000
-mol smoothrep top 4 0
+mol smoothrep top 4 1
 mol drawframes top 4 {now}
 mol clipplane center 0 4 top {0.0 0.0 0.0}
 mol clipplane color  0 4 top {0.5 0.5 0.5 }
@@ -468,7 +468,7 @@ mol clipplane center 5 4 top {0.0 0.0 0.0}
 mol clipplane color  5 4 top {0.5 0.5 0.5 }
 mol clipplane normal 5 4 top {0.0 0.0 1.0}
 mol clipplane status 5 4 top {0}
-mol representation DynamicBonds 1.200000 0.100000 7.000000
+mol representation DynamicBonds 1.200000 0.100000 32.000000
 mol color ResName
 mol selection {type 5 3}
 mol material Opaque
@@ -476,7 +476,7 @@ mol addrep top
 mol selupdate 5 top 0
 mol colupdate 5 top 0
 mol scaleminmax top 5 0.000000 0.000000
-mol smoothrep top 5 0
+mol smoothrep top 5 1
 mol drawframes top 5 {now}
 mol clipplane center 0 5 top {0.0 0.0 0.0}
 mol clipplane color  0 5 top {0.5 0.5 0.5 }
@@ -502,7 +502,7 @@ mol clipplane center 5 5 top {0.0 0.0 0.0}
 mol clipplane color  5 5 top {0.5 0.5 0.5 }
 mol clipplane normal 5 5 top {0.0 0.0 1.0}
 mol clipplane status 5 5 top {0}
-mol representation DynamicBonds 1.200000 0.100000 7.000000
+mol representation DynamicBonds 1.200000 0.100000 32.000000
 mol color ResName
 mol selection {type 5 4}
 mol material Opaque
@@ -510,7 +510,7 @@ mol addrep top
 mol selupdate 6 top 0
 mol colupdate 6 top 0
 mol scaleminmax top 6 0.000000 0.000000
-mol smoothrep top 6 0
+mol smoothrep top 6 1
 mol drawframes top 6 {now}
 mol clipplane center 0 6 top {0.0 0.0 0.0}
 mol clipplane color  0 6 top {0.5 0.5 0.5 }
@@ -536,7 +536,7 @@ mol clipplane center 5 6 top {0.0 0.0 0.0}
 mol clipplane color  5 6 top {0.5 0.5 0.5 }
 mol clipplane normal 5 6 top {0.0 0.0 1.0}
 mol clipplane status 5 6 top {0}
-mol representation DynamicBonds 1.200000 0.100000 7.000000
+mol representation DynamicBonds 1.200000 0.100000 32.000000
 mol color ResName
 mol selection {type 6 4}
 mol material Opaque
@@ -544,7 +544,7 @@ mol addrep top
 mol selupdate 7 top 0
 mol colupdate 7 top 0
 mol scaleminmax top 7 0.000000 0.000000
-mol smoothrep top 7 0
+mol smoothrep top 7 1
 mol drawframes top 7 {now}
 mol clipplane center 0 7 top {0.0 0.0 0.0}
 mol clipplane color  0 7 top {0.5 0.5 0.5 }
@@ -570,7 +570,7 @@ mol clipplane center 5 7 top {0.0 0.0 0.0}
 mol clipplane color  5 7 top {0.5 0.5 0.5 }
 mol clipplane normal 5 7 top {0.0 0.0 1.0}
 mol clipplane status 5 7 top {0}
-mol representation DynamicBonds 1.200000 0.100000 7.000000
+mol representation DynamicBonds 1.200000 0.100000 37.000000
 mol color ResName
 mol selection {type 6 3}
 mol material Opaque
@@ -578,7 +578,7 @@ mol addrep top
 mol selupdate 8 top 0
 mol colupdate 8 top 0
 mol scaleminmax top 8 0.000000 0.000000
-mol smoothrep top 8 0
+mol smoothrep top 8 1
 mol drawframes top 8 {now}
 mol clipplane center 0 8 top {0.0 0.0 0.0}
 mol clipplane color  0 8 top {0.5 0.5 0.5 }
@@ -604,7 +604,7 @@ mol clipplane center 5 8 top {0.0 0.0 0.0}
 mol clipplane color  5 8 top {0.5 0.5 0.5 }
 mol clipplane normal 5 8 top {0.0 0.0 1.0}
 mol clipplane status 5 8 top {0}
-mol representation DynamicBonds 1.200000 0.100000 7.000000
+mol representation DynamicBonds 1.200000 0.100000 37.000000
 mol color ResName
 mol selection {type 7 3}
 mol material Opaque
@@ -612,7 +612,7 @@ mol addrep top
 mol selupdate 9 top 0
 mol colupdate 9 top 0
 mol scaleminmax top 9 0.000000 0.000000
-mol smoothrep top 9 0
+mol smoothrep top 9 1
 mol drawframes top 9 {now}
 mol clipplane center 0 9 top {0.0 0.0 0.0}
 mol clipplane color  0 9 top {0.5 0.5 0.5 }
@@ -638,7 +638,7 @@ mol clipplane center 5 9 top {0.0 0.0 0.0}
 mol clipplane color  5 9 top {0.5 0.5 0.5 }
 mol clipplane normal 5 9 top {0.0 0.0 1.0}
 mol clipplane status 5 9 top {0}
-mol representation DynamicBonds 1.200000 0.100000 7.000000
+mol representation DynamicBonds 1.200000 0.100000 37.000000
 mol color ResName
 mol selection {type 7 4}
 mol material Opaque
@@ -646,7 +646,7 @@ mol addrep top
 mol selupdate 10 top 0
 mol colupdate 10 top 0
 mol scaleminmax top 10 0.000000 0.000000
-mol smoothrep top 10 0
+mol smoothrep top 10 1
 mol drawframes top 10 {now}
 mol clipplane center 0 10 top {0.0 0.0 0.0}
 mol clipplane color  0 10 top {0.5 0.5 0.5 }
@@ -673,7 +673,7 @@ mol clipplane color  5 10 top {0.5 0.5 0.5 }
 mol clipplane normal 5 10 top {0.0 0.0 1.0}
 mol clipplane status 5 10 top {0}
 mol rename top dump.lammpstrj
-set viewpoints([molinfo top]) {{{1 0 0 0.00750081} {0 1 0 -0.0303344} {0 0 1 -0.00101719} {0 0 0 1}} {{0.0717139 -0.00339032 0.99742 0} {-0.00823547 0.999958 0.00399108 0} {-0.997391 -0.00850047 0.071683 0} {0 0 0 1}} {{0.00601591 0 0 0} {0 0.00601591 0 0} {0 0 0.00601591 0} {0 0 0 1}} {{1 0 0 0} {0 1 0 0} {0 0 1 0} {0 0 0 1}}}
+set viewpoints([molinfo top]) {{{1 0 0 -0.982848} {0 1 0 0.00416167} {0 0 1 -0.217255} {0 0 0 1}} {{-0.0610026 0.0478007 -0.996992 0} {-0.0171207 0.998655 0.048928 0} {0.99799 0.0200539 -0.0601024 0} {0 0 0 1}} {{0.00633472 0 0 0} {0 0.00633472 0 0} {0 0 0.00633472 0} {0 0 0 1}} {{1 0 0 0} {0 1 0 0} {0 0 1 0} {0 0 0 1}}}
 lappend viewplist [molinfo top]
 set topmol [molinfo top]
 # done with molecule 1
