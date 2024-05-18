@@ -296,7 +296,7 @@ display dof off
 display dof_fnumber 64.000000
 display dof_focaldist 0.700000
 mol new dump.lammpstrj type lammpstrj first 0 last -1 step 1 filebonds 1 autobonds 1 waitfor all
-mol addfile /home/simon/Git/Art/gallery/scripts/2024-05-12-POLYMER/mol.xtc type xtc first 0 last -1 step 1 filebonds 1 autobonds 1 waitfor all
+mol addfile /home/simon/Git/Art/gallery/scripts/2024-05-12-POLYMER/nojump.xtc type xtc first 0 last -1 step 1 filebonds 1 autobonds 1 waitfor all
 mol delrep 0 top
 mol representation DynamicBonds 1.900000 0.100000 7.000000
 mol color ResName
@@ -673,7 +673,7 @@ mol clipplane color  5 10 top {0.5 0.5 0.5 }
 mol clipplane normal 5 10 top {0.0 0.0 1.0}
 mol clipplane status 5 10 top {0}
 mol rename top dump.lammpstrj
-set viewpoints([molinfo top]) {{{1 0 0 0.00750081} {0 1 0 -0.0303344} {0 0 1 -0.00101719} {0 0 0 1}} {{0.0717139 -0.00339032 0.99742 0} {-0.00823547 0.999958 0.00399108 0} {-0.997391 -0.00850047 0.071683 0} {0 0 0 1}} {{0.00722198 0 0 0} {0 0.00722198 0 0} {0 0 0.00722198 0} {0 0 0 1}} {{1 0 0 0} {0 1 0 0} {0 0 1 0} {0 0 0 1}}}
+set viewpoints([molinfo top]) {{{1 0 0 0.00750081} {0 1 0 -0.0303344} {0 0 1 -0.00101719} {0 0 0 1}} {{0.0717139 -0.00339032 0.99742 0} {-0.00823547 0.999958 0.00399108 0} {-0.997391 -0.00850047 0.071683 0} {0 0 0 1}} {{0.00601591 0 0 0} {0 0.00601591 0 0} {0 0 0.00601591 0} {0 0 0 1}} {{1 0 0 0} {0 1 0 0} {0 0 1 0} {0 0 0 1}}}
 lappend viewplist [molinfo top]
 set topmol [molinfo top]
 # done with molecule 1

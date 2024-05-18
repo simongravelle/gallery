@@ -23,7 +23,9 @@ group PEG type 1 2 3 4 5 6 7
 
 set group all image 0 0 0 
 
-dump mydmp all custom 25 prod.lammpstrj id mol type xu yu zu
+write_dump all atom dump.lammpstrj
+dump mydmp1 all custom 25 prod.lammpstrj id mol type xu yu zu
+dump mydmp2 all xtc 25 prod.xtc
 
 thermo 250
 variable mytemp equal temp
