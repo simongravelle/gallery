@@ -10,7 +10,7 @@ pair_style lj/cut/coul/long 12
 kspace_style pppm 1e-5
 special_bonds lj 0.0 0.0 0.5 coul 0.0 0.0 1.0 angle yes dihedral yes
 
-read_data equilibrated.data &
+read_data equilibrate.data &
     extra/bond/per/atom 3 &
     extra/angle/per/atom 6 &
     extra/dihedral/per/atom 10 &
@@ -23,9 +23,7 @@ group PEG type 1 2 3 4 5 6 7
 
 set group all image 0 0 0 
 
-#write_dump all atom dump.lammpstrj
-#dump mydmp all xtc 25 dump.xtc
-dump mydmp all custom 25 dump.lammpstrj id type xu yu zu
+dump mydmp all custom 25 prod.lammpstrj id mol type xu yu zu
 
 thermo 250
 variable mytemp equal temp

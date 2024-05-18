@@ -21,7 +21,8 @@ include PARM.lammps
 group H2O type 8 9
 group PEG type 1 2 3 4 5 6 7
 
-dump mydmp all atom 100 dump.lammpstrj
+dump mydmp all custom 1000 equilibrate.lammpstrj id mol type xu yu zu
+
 thermo 100
 variable mytemp equal temp
 variable myvol equal vol
@@ -35,4 +36,4 @@ timestep 1.0
 
 run 50000
 
-write_data equilibrated.data
+write_data equilibrate.data

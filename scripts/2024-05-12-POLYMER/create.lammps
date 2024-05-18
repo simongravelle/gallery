@@ -35,8 +35,9 @@ delete_atoms overlap 2.0 H2O PEG mol yes
 fix mynpt all npt temp 300 300 100 iso 1000 1000 1000
 timestep 1.0
 
-dump mydmp all atom 100 dump.lammpstrj
-thermo 100
+dump mydmp all custom 1000 create.lammpstrj id mol type xu yu zu
+
+thermo 1000
 variable mytemp equal temp
 variable myvol equal vol
 variable myenthalpy equal enthalpy
