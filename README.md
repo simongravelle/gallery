@@ -1,3 +1,6 @@
+[![DOI](https://zenodo.org/badge/692669796.svg)](https://zenodo.org/doi/10.5281/zenodo.13341946)
+[![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
+
 # The molecular art gallery
 
 The [molecular art gallery](https://simongravelle.github.io/gallery/) contains scripts and
